@@ -1,24 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Navbar from './components/Navbar';
+import Card from './components/Card';
+import Footer from './components/Footer';
+//import MyName from './MyName';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <>
+      <div className="App">
+        <Navbar/>
+        <div className='container'>
+          <div className="container-image">
+            <img src="https://mbahelpstation.com/wp-content/uploads/2023/04/Parul1.jpg" className='image' />
+          </div>
+          <Card />
+
+        </div>
+      </div>
+      <div className='container-footer'>
+
+        <Footer />
+
+      </div>
+    </>
+
+
+
+
   );
 }
 
